@@ -26,6 +26,6 @@ struct IndexPage: View {
 struct App: ExpressHandler {
 
     static let router = Router()
-        .get("/", IndexPath())
+        .get("/", IndexPage())
 }
 ```

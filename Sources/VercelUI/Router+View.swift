@@ -67,11 +67,11 @@ extension Router {
 // MARK: - Request Environment
 
 private struct RequestKey: EnvironmentKey {
-    static var defaultValue: Vercel.Request?
+    static var defaultValue: Request?
 }
 
 extension EnvironmentValues {
-    public var request: Vercel.Request {
+    public var request: Request {
         get { self[RequestKey.self] ?? RequestKey.defaultValue! }
         set { self[RequestKey.self] = newValue }
     }
@@ -80,11 +80,11 @@ extension EnvironmentValues {
 // MARK: - Response Environment
 
 private struct ResponseKey: EnvironmentKey {
-    static var defaultValue: Vercel.Response?
+    static var defaultValue: Response?
 }
 
 extension EnvironmentValues {
-    public var response: Vercel.Response {
+    public var response: Response {
         get { self[ResponseKey.self] ?? ResponseKey.defaultValue! }
         set { self[ResponseKey.self] = newValue }
     }
