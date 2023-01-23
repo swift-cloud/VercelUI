@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "VercelUI", targets: ["VercelUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-cloud/Vercel", from: "1.2.0"),
+        .package(url: "https://github.com/swift-cloud/Vercel", from: "1.3.0"),
         .package(url: "https://github.com/TokamakUI/Tokamak", from: "0.11.1")
     ],
     targets: [
