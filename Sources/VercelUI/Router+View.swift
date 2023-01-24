@@ -12,8 +12,8 @@ extension Router {
     @discardableResult
     public func get<T: View>(
         _ path: String,
-        cachePolicy: CachePolicy = .none,
-        _ handler: @autoclosure @escaping () -> T
+        _ handler: @autoclosure @escaping () -> T,
+        cachePolicy: CachePolicy = .none
     ) -> Self {
         return get(path, cachePolicy: cachePolicy) { _, _ in handler() }
     }
@@ -30,8 +30,8 @@ extension Router {
     @discardableResult
     public func post<T: View>(
         _ path: String,
-        cachePolicy: CachePolicy = .none,
-        _ handler: @autoclosure @escaping () -> T
+        _ handler: @autoclosure @escaping () -> T,
+        cachePolicy: CachePolicy = .none
     ) -> Self {
         return post(path, cachePolicy: cachePolicy) { _, _ in handler() }
     }
