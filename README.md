@@ -25,7 +25,9 @@ struct IndexPage: View {
 @main
 struct App: ExpressHandler {
 
-    static let router = Router()
-        .get("/", IndexPage())
+    static func configure() async throws -> Router {
+        Router()
+            .get("/", IndexPage())
+    }
 }
 ```

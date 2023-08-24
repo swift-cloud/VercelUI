@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.6
 
 import PackageDescription
 
@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "VercelUI", targets: ["VercelUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-cloud/Vercel", from: "1.3.0"),
+        .package(url: "https://github.com/swift-cloud/Vercel", from: "1.15.2"),
         .package(url: "https://github.com/TokamakUI/Tokamak", from: "0.11.1")
     ],
     targets: [
